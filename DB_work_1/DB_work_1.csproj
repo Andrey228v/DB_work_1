@@ -10,4 +10,11 @@
     <Folder Include="ViewModels\Новая папка\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Views\Windows\AddNewDeportamentWindow - Копировать.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>AddNewDeportamentWindow.xaml.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
 </Project>

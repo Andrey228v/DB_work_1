@@ -7,6 +7,61 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="50"/>
+		</Grid.RowDefinitions>
 
+		<TabControl Grid.Row="0">
+			<TabItem Name="UsersTab">
+				<TabItem.Header>
+					<TextBlock Text="Staff"></TextBlock>
+				</TabItem.Header>
+				<ListView>
+					<ListView.View>
+						<GridView>
+							<GridViewColumn Header="Name"></GridViewColumn>
+							<GridViewColumn Header="SureName"></GridViewColumn>
+							<GridViewColumn Header="Phone"></GridViewColumn>
+							<GridViewColumn Header="Salery"></GridViewColumn>
+							<GridViewColumn Header="Position"></GridViewColumn>
+							<GridViewColumn Header="Deportament"></GridViewColumn>
+						</GridView>
+					</ListView.View>
+				</ListView>
+			</TabItem>
+
+			<TabItem Name="PositionsTab">
+				<TabItem.Header>
+					<TextBlock Text="Positions"></TextBlock>
+				</TabItem.Header>
+				<ListView>
+					<ListView.View>
+						<GridView>
+							<GridViewColumn Header="Name"></GridViewColumn>
+							<GridViewColumn Header="Salery"></GridViewColumn>
+							<GridViewColumn Header="Count of staffs"></GridViewColumn>
+							<GridViewColumn Header="Max number"></GridViewColumn>
+							<GridViewColumn Header="Deportament"></GridViewColumn>
+						</GridView>
+					</ListView.View>
+				</ListView>
+			</TabItem>
+
+			<TabItem Name="DeportamentTab">
+				<TabItem.Header>
+					<TextBlock Text="Deportament"></TextBlock>
+				</TabItem.Header>
+				<ListView>
+					<ListView.View>
+						<GridView>
+							<GridViewColumn Header="Name"></GridViewColumn>
+							<GridViewColumn Header="Count of positions"></GridViewColumn>
+						</GridView>
+					</ListView.View>
+				</ListView>
+			</TabItem>
+
+		</TabControl>
     </Grid>
 </Window>
