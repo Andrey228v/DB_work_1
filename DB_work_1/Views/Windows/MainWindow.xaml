@@ -17,7 +17,7 @@
 				<TabItem.Header>
 					<TextBlock Text="Staff"></TextBlock>
 				</TabItem.Header>
-				<ListView>
+				<ListView ItemsSource="{Binding AllUsers}">
 					<ListView.View>
 						<GridView>
 							<GridViewColumn Header="Name"></GridViewColumn>
@@ -35,7 +35,7 @@
 				<TabItem.Header>
 					<TextBlock Text="Positions"></TextBlock>
 				</TabItem.Header>
-				<ListView>
+				<ListView ItemsSource="{Binding AllPositions}">
 					<ListView.View>
 						<GridView>
 							<GridViewColumn Header="Name"></GridViewColumn>
@@ -52,7 +52,7 @@
 				<TabItem.Header>
 					<TextBlock Text="Deportament"></TextBlock>
 				</TabItem.Header>
-				<ListView>
+				<ListView ItemsSource="{Binding AllDepartments}">
 					<ListView.View>
 						<GridView>
 							<GridViewColumn Header="Name"></GridViewColumn>
@@ -61,7 +61,14 @@
 					</ListView.View>
 				</ListView>
 			</TabItem>
-
 		</TabControl>
-    </Grid>
+		<StackPanel Grid.Row="1"
+					Orientation="Horizontal"
+					HorizontalAlignment="Right">
+			<Button Content="Добавить сотрудника" Command="{Binding OpenAddNewUserWnd}"/>
+			<Button Content="Добавить Позицию" Command="{Binding OpenAddNewPositionWnd}"/>
+			<Button Content="Добавить Отдел" Command="{Binding OpenAddNewDepartmentWnd}"/>
+			
+		</StackPanel>
+	</Grid>
 </Window>

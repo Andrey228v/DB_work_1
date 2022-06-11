@@ -10,7 +10,7 @@ namespace DB_work_1.Models
 
         public string Name { get; set; }
 
-        public string Salary { get; set; }
+        public decimal Salary { get; set; }
 
         public int MaxNumber { get; set; }
 

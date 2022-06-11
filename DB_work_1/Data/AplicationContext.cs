@@ -6,14 +6,17 @@ using System.Text;
 
 namespace DB_work_1.Data
 {
-    public class AplicationContext : DbContext
+
+    //https://www.youtube.com/watch?v=S9HrLdSrVho
+    // https://www.youtube.com/c/RuslanShishmarev/videos
+    public class ApplicationContext : DbContext
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Position> Positions { get; set; }
         public DbSet<Deportament> Deportaments { get; set; }
 
 
-        public AplicationContext()
+        public ApplicationContext()
         {
             // Если базы данных нет, то она создастся 
             Database.EnsureCreated();

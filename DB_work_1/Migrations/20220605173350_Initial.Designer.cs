@@ -6,9 +6,10 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
+
 namespace DB_work_1.Migrations
 {
-    [DbContext(typeof(AplicationContext))]
+    [DbContext(typeof(ApplicationContext))]
     [Migration("20220605173350_Initial")]
     partial class Initial
     {
